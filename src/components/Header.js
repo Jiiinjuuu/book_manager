@@ -8,6 +8,7 @@ function Header() {
         <nav>
           <a onClick={() => navigate('/BookList')}>도서목록</a>
           <a onClick={() => navigate('/BookRegister')}>도서등록</a>
+          <a onClick={() => navigate('/mybooks')}>내 서재</a>
           <button onClick={() => navigate('/login')} className="login-btn">Log in</button>
         </nav>
       </header>

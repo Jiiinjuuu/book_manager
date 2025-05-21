@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import Login from './pages/Login';
 import BookList from './pages/BookList';
 import BookRegister from './pages/BookRegister';
+import MyBooks from './pages/MyBooks';
 import './index.css';
 
 function Home() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" element={<Login />} />  {/* ✅ 수정된 경로 */}
         <Route path="/BookList" element={<BookList />} />  {/* ✅ 수정된 경로 */}
         <Route path="/BookRegister" element={<BookRegister />} />  {/* ✅ 수정된 경로 */}
+        <Route path="/mybooks" element={<MyBooks />} />  {/* ✅ 수정된 경로 */}      
       </Routes>
     </BookProvider>
   );

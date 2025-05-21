@@ -1,6 +1,40 @@
 /* Google Font (ensure it's in index.html) */
 /* body는 여기서 수정하지 않고 별도 래퍼에서 처리함 */
 
+.register-button,
+.home-button, .mybook-button {
+    padding: 8px 16px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mybook-button {
+    background-color: #718096;
+}
+
+.register-button {
+    background-color: #D4C9BE;
+}
+
+.home-button {
+    background-color: #123458;
+    color: white;
+}
+
+.mybook-button:hover {
+    background-color: #4A5568; /* 어두운 블루그레이 */
+}
+
+.register-button:hover {
+    background-color: #BFB3A6; /* 톤다운된 베이지 */
+}
+
+.home-button:hover {
+    background-color: #0F2A45; /* 네이비 톤으로 한층 더 깊게 */
+}
+
 .book-list-page {
     min-height: 100vh;
     background: url('/back.jpg') no-repeat center center / cover;
@@ -57,11 +91,11 @@ font-size: 16px;
 
 /* 상태 표시 */
 .available {
-color: #73946B;
+color: #2F855A;
 font-weight: bold;
 }
 .unavailable {
-color: red;
+color: #E53E3E;
 font-weight: bold;
 }
 
