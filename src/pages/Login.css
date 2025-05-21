@@ -1,12 +1,30 @@
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  pointer-events: none; /* 👈 클릭 방지 안 되게 */
+}
+
 .login-container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fafafa;
+    background-color: #fafafa; */
+    background: url('/back.jpg') no-repeat center center / cover; /* public에 있는 이미지 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .login-box {
+    z-index: 1;
     width: 100%;
     max-width: 400px;
     background: white;

@@ -1,0 +1,64 @@
+/* BookRegister.css */
+
+.register-background {
+    background: url('/back.jpg') no-repeat center center / cover; /* public에 있는 이미지 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    pointer-events: none; /* 👈 클릭 방지 안 되게 */
+}
+
+.register-form {
+    z-index: 1;
+    max-width: 960px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.register-form input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #537D5D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #73946B;
+}
